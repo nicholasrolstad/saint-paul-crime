@@ -236,13 +236,13 @@ option {
 	}
 
 	.desc {
-		top: 45px;
-		left: 40px;
+		top: 20px;
+		left: 224px;
 		font-size: 13.5px;
 	}
 
 	.dropdown {
-		top: 75px;
+		top: 40px;
 		font-size: .7em;
 		border-radius: 5px;
 	}	
