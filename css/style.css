@@ -78,6 +78,7 @@ option {
 	padding: 5px 10px;
 	border-radius: 5px;
 	font-size: 22px;
+	z-index: 200;
 }
 
 /* style infolable h1 text*/
