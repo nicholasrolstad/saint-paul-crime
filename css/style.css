@@ -1,0 +1,254 @@
+* {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+}
+
+body {
+	margin: 0px;
+	background-color: #f4f4eb;
+	overflow: hidden;
+	margin-right: 10px;
+}
+
+/* style individual districts on map */
+.district {
+	fill: #bb435b;
+	stroke: #f4f4eb;
+	stroke-width: 1px;
+}
+
+/* style map div*/
+.map {
+	background-color: #f4f4eb;
+}
+
+/* style chart div*/
+.chart {
+	background-color: #f4f4eb;
+	float: right;
+}
+
+/* style numbers on chart */
+.numbers {
+	fill: #333;
+	font-family: 'Sanchez', serif;
+}
+
+/* style dropdown menus */
+.dropdown {
+	position: absolute;
+	top: 105px;
+	z-index: 10;
+	font-family: sans-serif;
+	font-size: 1em;
+	font-weight: bold;
+	padding: 2px;
+	border: 1px solid #333;
+	box-shadow: 2px 2px 4px #333;
+	background-color: #DDD;
+	color: #333;
+	border-radius: 5px;
+}
+
+/* place year dropdown */
+.Year {
+	left: 240px;
+}
+
+/* place crime-type dropdown */
+.Crime{
+	left: 40px;
+}
+
+/* style options on dropdown */
+option {
+	font-weight: normal;
+}
+
+/* style pop-up info label */
+.infolabel {
+	overflow: hidden;
+	position: absolute;
+	height: 80px;
+	min-width: 100px;
+	color: #f4f4eb;
+	font-family: 'Sanchez', serif;
+	background-color: #333;
+	border: 2px solid #f4f4eb;
+	padding: 5px 10px;
+	border-radius: 5px;
+	font-size: 22px;
+}
+
+/* style infolable h1 text*/
+.infolabel h1 {
+	margin: 0 6px 0 0;
+	padding: 0;
+	display: inline-block;
+	line-height: 1em;
+	font-size: 39px;
+}
+
+/* style the nieghboorhood label */
+.labelname {
+	font-size: 22px;
+}
+
+/* style title */
+.title {
+	position: absolute;
+	text-align: center;
+	top: 15px;
+	left: 40px;
+	z-index: 20;
+	color: #333;
+	font-family: 'Sanchez', serif;
+	font-size: 39px;
+}
+
+/* style subtitle / description*/
+.desc {
+	position: absolute;
+	text-align: center;
+	top: 65px;
+	left: 40px;
+	z-index: 20;
+	color: #666;
+	font-family: 'Sanchez', serif;
+	font-size: 23px;
+}
+
+/* style credits*/
+.credits {
+	position: absolute;
+	text-align: center;
+	bottom: 10px;
+	left: 40px;
+	z-index: 20;
+	color: #333;
+	font-family: 'Sanchez', serif;
+	font-size: 14px;
+}
+
+
+
+/* MEDIA QUERIES FOR RESPONSIVE DESIGN*/
+
+@media screen and (max-width: 1500px) {
+	.infolabel {
+		height: 65px;
+		min-width: 100px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 16px;
+	}
+
+	.infolabel h1 {
+		font-size: 28px;
+	}
+
+	.labelname {
+		font-size: 17px;
+	}
+	.credits {
+		font-size: 12px;
+	}
+}
+
+
+@media screen and (max-width: 900px) {
+	.infolabel {
+		height: 49px;
+		min-width: 100px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 10px;
+	}
+
+	.infolabel h1 {
+		font-size: 18px;
+	}
+
+	.labelname {
+		font-size: 14px;
+	}
+
+	.credits {
+		font-size: 10px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.infolabel {
+		height: 49px;
+		min-width: 100px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 10px;
+	}
+
+	.infolabel h1 {
+		font-size: 18px;
+	}
+
+	.labelname {
+		font-size: 14px;
+	}
+
+	.credits {
+		font-size: 8px;
+	}
+
+	.numbers {
+		font-size: 0px;
+	}
+}
+
+@media screen and (max-height: 500px) {
+	.infolabel {
+		height: 45px;
+		min-width: 100px;
+		padding: 5px 10px;
+		border-radius: 5px;
+		font-size: 8px;
+	}
+
+	.infolabel h1 {
+		font-size: 14px;
+	}
+
+	.labelname {
+		font-size: 12px;
+	}
+
+	.credits {
+		font-size: 6px;
+	}
+
+	.numbers {
+		font-size: 0px;
+	}
+
+	.title {
+		top: 12px;
+		left: 40px;
+		font-size: 22px;
+	}
+
+	.desc {
+		top: 45px;
+		left: 40px;
+		font-size: 13.5px;
+	}
+
+	.dropdown {
+		top: 75px;
+		font-size: .7em;
+		border-radius: 5px;
+	}	
+
+	.Year {
+		left: 190px;
+	}
+}
+
